@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jinson Oplimo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reservation Form for Alamada Explorer">
+  <meta name="keywords" content="reservation form, Alamada tourism, booking">
+  <title>Reserve Your Visit - Alamada Explorer</title>
+  <link rel="icon" type="image/x-icon" href="images/tarasaalamada.jpg">
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-brand">Alamada Explorer</div>
+
+      <div class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <ul class="navbar-nav" id="navbar-nav">
+        <li><a href="index.html#home" class="nav-link active">Home</a></li>
+        <li><a href="index.html#destinations" class="nav-link">Destinations</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Reservation Form Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2>Reserve Your Visit</h2>
+      <p>Fill out this form to reserve your spot at your favorite destination in Alamada.</p>
+
+      <!-- EMAILJS ENABLED FORM -->
+      <form id="reservationForm">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="destination">Choose Destination</label>
+          <select id="destination" name="destination" required>
+            <option value="" disabled selected>Select a Destination</option>
+            <option value="Palepaz Falls">Palepaz Falls</option>
+            <option value="Asik-Asik Falls">Asik-Asik Falls</option>
+            <option value="The Tent City">The Tent City</option>
+            <option value="Salukot Mountain View Resort">Salukot Mountain View Resort</option>
+            <option value="Daday Falls">Daday Falls</option>
+            <option value="Coco's Funville & Nature Park">Coco's Funville & Nature Park</option>
+            <option value="Cuartel De Campu Diez">Cuartel De Campu Diez</option>
+            <option value="Camp Heaven's View">Camp Heaven's View</option>
+            <option value="Pobre Hidden Resort">Pobre Hidden Resort</option>
+            <option value="J&A Highlands">J&A Highlands</option>
+            <option value="Raradangan River">Raradangan River</option>
+            <option value="Guo Peaks">Guo Peaks</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferred Visit Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="guests">Number of Visitors</label>
+          <input type="number" id="guests" name="guests" min="1" placeholder="Number of Visitors" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Additional Requests</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+        </div>
+
+        <div class="form-btn">
+          <button type="submit">Reserve Now</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- EmailJS Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script/form.js"></script>
+
+</body>
+</html>

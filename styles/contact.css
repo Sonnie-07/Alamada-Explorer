@@ -1,0 +1,211 @@
+/* ------------------------------
+   GENERAL STYLES
+--------------------------------*/
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom right, #046c4e, #034d3b);
+}
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
+.navbar {
+  background: #046c4e;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .active {
+  color: #ffd369;
+}
+
+/* ------------------------------
+   MOBILE NAV TOGGLE
+--------------------------------*/
+.navbar-toggle {
+  width: 30px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar-toggle div {
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+}
+
+/* ------------------------------
+   CONTACT FORM SECTION
+--------------------------------*/
+.contact-section {
+  padding: 120px 20px 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section .container {
+  max-width: 700px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-section h2 {
+  text-align: center;
+  color: #ffd369;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+/* ------------------------------
+   FORM ELEMENTS
+--------------------------------*/
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #ffd369;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 7px;
+  border: none;
+  font-size: 1rem;
+  background: #e1dcdd;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* ------------------------------
+   SUBMIT BUTTON
+--------------------------------*/
+.form-btn button {
+  width: 100%;
+  padding: 14px 30px;
+  background: #ffd369;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-btn button:hover {
+  background: #e6c14a;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #046c4e;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 768px) {
+
+  .navbar-toggle {
+    display: flex;
+    z-index: 1100;
+  }
+
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(4,108,78,0.95);
+    flex-direction: column;
+    width: 220px;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .navbar-nav.show {
+    display: flex;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+  }
+
+  .contact-section .container {
+    padding: 25px;
+  }
+}
