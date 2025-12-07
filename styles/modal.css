@@ -67,8 +67,8 @@
 /* Responsive modal images for mobile */
 @media (max-width: 768px) {
   .modal-image {
-    width: 35%;       /* Full width on mobile */
-    max-width: 500px;  /* Avoid exceeding container */
+    width: 100%;       /* Full width on mobile */
+    max-width: 100%;  /* Avoid exceeding container */
     margin: 10px auto; /* Center images */
     border-radius: 15px; 
     object-fit: cover; 
