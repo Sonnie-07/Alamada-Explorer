@@ -67,7 +67,12 @@
 /* Responsive modal images for mobile */
 @media (max-width: 768px) {
   .modal-image {
-    width: 50%;
-    margin-bottom: 10px;
+    width: 35%;       /* Full width on mobile */
+    max-width: 500px;  /* Avoid exceeding container */
+    margin: 10px auto; /* Center images */
+    border-radius: 15px; 
+    object-fit: cover; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
   }
 }
